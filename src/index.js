@@ -4,7 +4,7 @@ import { App } from 'components/App';
 import './index.css';
 import {soshForm} from 'components/form';
 
-ReactDOM.createRoot(document.getElementById('soshForm')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
