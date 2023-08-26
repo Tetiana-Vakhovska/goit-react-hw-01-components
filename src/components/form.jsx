@@ -33,7 +33,7 @@
   </div>
   </div>
 }
-
+ReactDOM.createRoot(document.getElementById("root")).render(product);
 
 
 Recipe.propTypes = {
