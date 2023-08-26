@@ -6,10 +6,13 @@
         alt="User avatar"
         class="avatar"
       />
-      <p class="name">Petra Marica</p>
-      <p class="tag">@pmarica</p>
-      <p class="location">Salvador, Brasil</p>
-    </div>
+
+<CardWrapper>
+      <p>{$name}</p>
+      <InfoContainer>
+      <p >{$tag}</p>
+      <p>{$location}</p>
+    
   
     <ul class="stats">
       <li>
@@ -25,5 +28,19 @@
         <span class="quantity">3000</span>
       </li>
     </ul>
+    </InfoContainer>
+    </CardWrapper>
+  </div>
   </div>
 }
+
+
+
+Recipe.propTypes = {
+  recipe: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    servings: PropTypes.number.isRequired,
+    calories: PropTypes.number.isRequired,
+  }).isRequired,
+};
